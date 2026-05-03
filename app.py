@@ -49,7 +49,7 @@ if uploaded_file is not None:
                     pass
 
         st.header("Données expérimentales")
-        st.dataframe(df.head())
+        st.dataframe(df)
 
         colonnes = df.columns.tolist()
         facteurs = st.sidebar.multiselect("Entrées (X)", options=colonnes)
